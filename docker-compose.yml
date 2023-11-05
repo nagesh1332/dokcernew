@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+ webapp:
+  image: webv2
+  restart: always
+  ports:
+    - 8989:80
+  volumes:
+    - /root/webpage/:/var/www/html
+
+volumes:
+  webpage:
